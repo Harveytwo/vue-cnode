@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.wrap {
+			width: 100%;
+		}
+		div {
+			
+		}
+		.div1 {
+			width: 150px;
+			height: 150px;
+			float: left;
+			background: red;
+		}
+		.div2 {
+			width: 150px;
+			height: 150px;
+			background: green;
+			float: right;
+			clear: both;
+		}
+		.div3 {
+			width: 150px;
+			height: 150px;
+			background: yellow;
+			float: right;
+			/*clear: both;*/
+		}
+		.div4 {
+			clear: both;
+		}
+		.clearfix:after{clear: both;content: "";display: block;height: 0;visibility: hidden;}
+	</style>
+</head>
+<body>
+	测试
+	<div class="wrap">
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div3"></div>
+		<div class="div4"></div>
+	</div>
+</body>
+</html>
