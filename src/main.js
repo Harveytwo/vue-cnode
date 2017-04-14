@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import VueSimplemde from 'vue-simplemde'
+Vue.use(VueSimplemde)
+
 // 引入 base.css / rem.js
 import '../static/css/base.css'
 import '../static/js/rem.js'

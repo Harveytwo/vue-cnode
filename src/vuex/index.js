@@ -20,7 +20,9 @@ const store = new Vuex.Store({
       { page: '3'},
       { page: '4'},
       { page: '5'},
-    ]
+    ],
+    // 话题详情
+    topicDetails: {},
   },
   mutations: {
     chooseTab (state, type) {
@@ -41,6 +43,10 @@ const store = new Vuex.Store({
     },
     toPage1 (state, page1) {
     	state.pages = page1
+    },
+
+    getTopicDetails (state, topicDetails) {
+      state.topicDetails = topicDetails
     }
   }
 })

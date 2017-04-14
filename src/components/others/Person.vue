@@ -21,7 +21,7 @@
     		</div>
     	</div>
 
-    	<div class="postArticle">
+    	<div class="postArticle" v-if="postTopic">
     		<a href="">
     			<span>发布话题</span>
     		</a>
@@ -35,7 +35,8 @@ export default {
   name: 'person',
   data () {
     return {
-      msg: 'Welcome to the person'
+      msg: 'Welcome to the person',
+			postTopic: false
     }
   }
 }

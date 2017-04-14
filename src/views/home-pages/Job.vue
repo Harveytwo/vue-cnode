@@ -22,9 +22,10 @@
           <span v-if="item.top" class="putTop">置顶</span>
           <span v-if=" !item.top && item.good " class="putTop">精华</span>
           
-          <a href="" class="topicTitle text-ellipsis">
+          <router-link :to="{ path: '/topic/'+ item.id }"
+                       class="topicTitle text-ellipsis">
             {{ item.title }}
-          </a>
+          </router-link>
         </div>
 
       </div>
